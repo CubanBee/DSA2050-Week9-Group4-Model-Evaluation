@@ -87,4 +87,4 @@ Monitor data drift, missingness, and false negatives over time, and keep human r
 - [ ] One representative will submit the shared URL to the course LMS
 
 ## GitHub repository URL
-[Paste URL here]
+[https://github.com/CubanBee/DSA2050-Week9-Group4-Model-Evaluation.git]
