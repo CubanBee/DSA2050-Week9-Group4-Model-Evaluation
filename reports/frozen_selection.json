@@ -1,0 +1,11 @@
+{
+  "selected_model": "Logistic regression",
+  "best_params": {
+    "model__C": 1
+  },
+  "primary_metric": "f1",
+  "cv_mean_f1": 0.47009865843703824,
+  "rationale": "We select Logistic Regression (C=1) over Decision Tree because it achieves a higher 5-fold stratified CV mean F1 of 0.470 (std 0.053) compared to the best Decision Tree (max_depth=3) at 0.399 (std 0.049), with higher mean precision (0.624 vs. 0.566) and recall (0.378 vs. 0.318). Out-of-fold predictions show 566 false negatives and 205 false positives, with much lower recall for Established customers (0.216, 509 false negatives) than New customers (0.782, 57 false negatives, smaller group), so subgroup misses remain an important risk. Despite moderate overall recall, Logistic Regression with C=1 is simple, regularised, interpretable, and clearly outperforms the baseline (0.000) and tree candidates without overcomplicating the model.",
+  "random_seed": 42,
+  "scikit_learn_version": "1.9.1"
+}
